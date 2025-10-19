@@ -1,11 +1,15 @@
-# Uses |
+# Demonstrates returning the value of a Boolean expression
 
-name = input("What's your name? ")
+def main():
+    x = int(input("What's x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
 
-match name:
-    case "Harry" | "Hermione" | "Ron":
-        print("Gryffindor")
-    case "Draco":
-        print("Slytherin")
-    case _:
-        print("Who?")
+
+def is_even(n):
+    return n % 2 == 0
+
+
+main()
