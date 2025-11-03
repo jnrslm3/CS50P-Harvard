@@ -15,9 +15,9 @@ def main() -> None:
         count = 0
         with open(filename, "r") as file:
             for line in file:
-                if line.strip() == "":  # skip blank lines
+                if line.strip() == "":  
                     continue
-                if line.lstrip().startswith("#"):  # skip comments
+                if line.lstrip().startswith("#"):  
                     continue
                 count += 1
     except FileNotFoundError:
